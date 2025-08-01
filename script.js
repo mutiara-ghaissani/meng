@@ -1,40 +1,40 @@
-let angka1 = prompt("masukkan angka pertama:");
-let angka2 = prompt("masukkan angka kedua:");
+number = prompt("Masukkan angka");
 
-angka1 = parseFloat(angka1);
-angka2 = parseFloat(angka2);
+if (number % 2 == 0) {
+    alert("Angka " + number + " adalah genap");
+}
 
-let hasil1 = angka1 + angka2;
-alert("hasil pertambahan: " + hasil1);
+number = prompt("Masukkan angka");
 
-let angka3 = prompt("masukkan angka ketiga:");
-let angka4 = prompt("masukkan angka keempat:");
+if (number % 2 == 0) {
+    alert("Angka " + number + " adalah genap");
+} else {
+    alert("Angka " + number + " adalah ganjil");
+}
 
-angka3 = parseFloat(angka3);
-angka4 = parseFloat(angka4);
+harini = prompt("Bagaimana cuaca hari ini?");
 
-let hasil2 = angka3 - angka4;
-alert("hasil pengurangan: " + hasil2);
+if (harini == "dingin") {
+    alert("Tetap pakai sunscreen ya! Sinar matahari tetap mengintai kita");
+} else if (harini == "panas") {
+    alert("Harus pakai sunscreen! Agar kulit kita tercegah dari flek dini");
+} else {
+    alert("Selalu pakai sunscreen! Demi menjaga kulit sehat kita!")
+}
 
+number = prompt ("Masukkan angka");
 
-let angka5 = prompt("masukkan angka kelima:");
-let angka6 = prompt("masukkan angka keenam :");
+mod = number % 2;
 
-angka5 = parseFloat(angka5);
-angka6 = parseFloat(angka6);
-
-let hasil3 = angka5 * angka6;
-alert("hasil perkalian: " + hasil3);
-
-let angka7 = prompt("masukkan angka ketujuh:");
-let angka8 = prompt("masukkan angka kedelapan:");
-
-angka7 = parseFloat(angka7);
-angka8 = parseFloat(angka8);
-
-let hasil4 = angka7 / angka8;
-alert("hasil pembagian: " + hasil4);
-
-
-
+switch (mod) {
+    case 0:
+        alert(number + " adalah angka genap");
+        break;
+    case 1: 
+        alert(number + " adalah angka ganjil");
+        break;
+      default:
+        alert("hanya menerima angka");
+        break;
+}
 
