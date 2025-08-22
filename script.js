@@ -1,40 +1,48 @@
-number = prompt("Masukkan angka");
+let fruits = ["Apple", "Banana", "Cherry", "Pomegranate"];
 
-if (number % 2 == 0) {
-    alert("Angka " + number + " adalah genap");
-}
+let cars = new Array("Honda", "KIA", "Hyundai", "Range Rover");
+console.log(cars);
+//nambah new array
 
-number = prompt("Masukkan angka");
+fruits = ["Apple", "Banana", "Cherry", "Pomegranate"];
+// urutan    0      1      2          3
+console.log(fruits[3]);
+//akan menampilkan "Promegranate"
 
-if (number % 2 == 0) {
-    alert("Angka " + number + " adalah genap");
-} else {
-    alert("Angka " + number + " adalah ganjil");
-}
+let fruit = ["Apple", "Banana", "Cherry", "Pomegranate"];
+fruits[2] = "Mango";
+console.log(fruits[2]);
+//mengganti item, jd cherry akan diganti jd mango
 
-harini = prompt("Bagaimana cuaca hari ini?");
+//METHOD DI ARRAY
 
-if (harini == "dingin") {
-    alert("Tetap pakai sunscreen ya! Sinar matahari tetap mengintai kita");
-} else if (harini == "panas") {
-    alert("Harus pakai sunscreen! Agar kulit kita tercegah dari flek dini");
-} else {
-    alert("Selalu pakai sunscreen! Demi menjaga kulit sehat kita!")
-}
+let poke = new Array("Alolan Raichu", "Talonflame", "Lapras");
+poke.length;
+//mengetahui bnyk item di list
 
-number = prompt ("Masukkan angka");
+let mcyt = new Array("Fundy", "Purpled", "Niki Nihachu");
+mcyt.pop();
+console.log(mcyt);
+//menghapus item plg terakhir
 
-mod = number % 2;
+let pokemon = ["Slyveon", "Umbreon", "Leafage", "Eeve"];
+pokemon.push("Zoroark");
+console.log(pokemon);
 
-switch (mod) {
-    case 0:
-        alert(number + " adalah angka genap");
-        break;
-    case 1: 
-        alert(number + " adalah angka ganjil");
-        break;
-      default:
-        alert("hanya menerima angka");
-        break;
-}
+let mcyts = ["Techno", "Philza", "Sapnap", "BadBoyHalo"];
+mcyts.shift();
+console.log(mcyts);
+//menghapus item plg awal
+
+let Lmanburg = ["Tommyinnit", "Wilbur", "Ranboo", "Tubbo"];
+Lmanburg.unshift(Jschlatt);
+console.log(Lmanburg);
+//menambahkan item baru di plg awal
+
+let pogtopia = ["Dream", "George", "Sapnap", "Eret"];
+pogtopia.slice(0,3);
+//mengambil sebagian item
+//Array ["George", "Sapnap"]
+
+
 
