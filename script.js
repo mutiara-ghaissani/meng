@@ -1,48 +1,41 @@
-let fruits = ["Apple", "Banana", "Cherry", "Pomegranate"];
+// Function without argument -->
+// Membuat Function
+ function greet(){
+    console.log("Helooo, how your life?")
+}
 
-let cars = new Array("Honda", "KIA", "Hyundai", "Range Rover");
-console.log(cars);
-//nambah new array
-
-fruits = ["Apple", "Banana", "Cherry", "Pomegranate"];
-// urutan    0      1      2          3
-console.log(fruits[3]);
-//akan menampilkan "Promegranate"
-
-let fruit = ["Apple", "Banana", "Cherry", "Pomegranate"];
-fruits[2] = "Mango";
-console.log(fruits[2]);
-//mengganti item, jd cherry akan diganti jd mango
-
-//METHOD DI ARRAY
-
-let poke = new Array("Alolan Raichu", "Talonflame", "Lapras");
-poke.length;
-//mengetahui bnyk item di list
-
-let mcyt = new Array("Fundy", "Purpled", "Niki Nihachu");
-mcyt.pop();
-console.log(mcyt);
-//menghapus item plg terakhir
-
-let pokemon = ["Slyveon", "Umbreon", "Leafage", "Eeve"];
-pokemon.push("Zoroark");
-console.log(pokemon);
-
-let mcyts = ["Techno", "Philza", "Sapnap", "BadBoyHalo"];
-mcyts.shift();
-console.log(mcyts);
-//menghapus item plg awal
-
-let Lmanburg = ["Tommyinnit", "Wilbur", "Ranboo", "Tubbo"];
-Lmanburg.unshift(Jschlatt);
-console.log(Lmanburg);
-//menambahkan item baru di plg awal
-
-let pogtopia = ["Dream", "George", "Sapnap", "Eret"];
-pogtopia.slice(0,3);
-//mengambil sebagian item
-//Array ["George", "Sapnap"]
+// Memanggil Function
+greet()
 
 
+// Function with parameter/argument -->
+ function greet(name){
+    alert("Heloo, how your life?" + name + "?")
+ }
 
+ let yourName = prompt("What's your name :D?")
+
+ // Memanggil functiom diikuti parameter
+ greet(yourName);
+
+ // Function-Return (hny mghslkn nilai, tidak menampilkan apa-apa) -->
+ function add(a, b){
+    result = a + b;
+    result_text = a + " + " + b + " = " + result;
+
+    return result_text;
+ }
+
+ console.log(add(10, 11))
+
+ // Function in Variable (kyk return juga tpi ada variable tmbhn jd bisa di output) -->
+ function add(a,b){
+    result = a + b;
+    result_text = a + " + " + b + " = " + result;
+
+    return result_text;
+ }
+
+ addition = add(10, 11);
+
+ console.log("The result is" + addition);
