@@ -3,9 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BMI Calculator</title>
 </head>
 <body>
+     
+    <h1 style="font-family: 'Courier New', Courier, monospace;">BMI CALCULATOR</h1>
+
+    <form id="bmiform">
+        <label for="Berat Badan" style="font-family: monospace;"> Berat Badan (kg)</label><br>
+        <input type="number" id="Berat Badan"><br><br>
+
+        <label for="Tinggi Badan"  style="font-family: monospace;"> Tinggi Badan (cm)</label><br>
+        <input type="number" id="Tinggi"><br><br>
+
+        <button type="button" id="hitungbtn" style="font-family: 'Courier New', Courier, monospace;">HITUNG BMI</button>
+    </form>
+
+    <h1 id="result"></h1>
+
     <script src="script.js"></script>
+
 </body>
 </html>
